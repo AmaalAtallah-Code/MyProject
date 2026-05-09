@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Billing - Zas Enterprise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="portal-body">
+
+<div class="portal-wrapper">
+    <!-- الهامش الأسود الجانبي الذي أضفناه سابقاً -->
+    <aside class="sidebar-black">
+        <div class="sidebar-logo"><img src="images/logo.png" alt="Logo"></div>
+        <ul class="sidebar-menu">
+            <li><a href="billing.html">Billing</a></li>
+            <li><a href="billing.html">Billing</a></li>
+            <li class="active">💳</li>
+        </ul>
+    </aside>
+
+    <main class="billing-container">
+        <!-- الجزء العلوي: الأفاتار وزر التحميل -->
+        <header class="billing-header">
+            <div class="avatar-large">AI</div>
+            <a href="#" class="download-link">Download Receipt</a>
+        </header>
+
+        <!-- البطاقات العلوية (Receipt & Details) -->
+        <div class="billing-cards">
+            <div class="info-card">
+                <h3>Receipt</h3>
+                <p>Invoice Number: <strong>123456789</strong></p>
+                <p>Date of Purchase: <strong>June 1, 2023</strong></p>
+                <p>Item: <strong>1-1 Service - Property Inspection</strong></p>
+                <hr>
+                <p class="total">Total Amount: $150</p>
+            </div>
+
+            <div class="info-card">
+                <h3>Details</h3>
+                <p>Payment Method: <strong>Credit Card ending in 1234</strong></p>
+                <p>Billing Address: <strong>456 Main Street, Anytown, Pakistan</strong></p>
+                <p>Postal Code: <strong>12345</strong></p>
+            </div>
+        </div>
+
+        <!-- جدول الفواتير -->
+        <div class="table-section">
+            <table class="billing-table">
+                <thead>
+                <tr>
+                    <th>Invoice Number</th>
+                    <th>Date</th>
+                    <th>Item</th>
+                    <th>Amount</th>
+                    <th>Status</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>INV-001</td>
+                    <td>2023-06-01</td>
+                    <td>1-1 Service - Inspection</td>
+                    <td>$150.00</td>
+                    <td class="status-paid">Paid</td>
+                </tr>
+                <tr>
+                    <td>INV-002</td>
+                    <td>2023-06-15</td>
+                    <td>Premium Listing Upgrade</td>
+                    <td>$50.00</td>
+                    <td class="status-pending">Pending</td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </main>
+</div>
+
+</body>
+</html>

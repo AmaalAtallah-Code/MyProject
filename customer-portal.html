@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Portal - Zas Enterprise</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="portal-body">
+
+<div class="portal-container">
+    <!-- الجزء الأيسر: المحتوى الرئيسي -->
+    <main class="portal-main">
+        <header class="user-welcome">
+            <div class="avatar">AI</div>
+            <div class="welcome-text">
+                <h1>Hello, Alex</h1>
+                <p>Today is Tuesday, 27 June 2023</p>
+            </div>
+        </header>
+
+        <section class="my-properties">
+            <h2>My Properties</h2>
+            <p class="subtitle">Houses You've Viewed</p>
+
+            <div class="properties-grid-small">
+
+                <div class="mini-card">
+                    <img src="images/prop1.jpg" alt="Cozy Villa">
+                    <div class="mini-card-info">
+                        <h4>Cozy Villa</h4>
+                        <div class="specs">
+                            <span>Sqft: 2,500</span>
+                            <span>3 Bedrooms</span>
+                        </div>
+                        <button class="price-tag">$250,000</button>
+                    </div>
+                </div>
+                <!-- مثال لبطاقة ثانية -->
+                <div class="mini-card">
+                    <img src="images/prop2.jpg" alt="Modern Apartment">
+                    <div class="mini-card-info">
+                        <h4>Modern Apartment</h4>
+                        <div class="specs">
+                            <span>Sqft: 2,000</span>
+                            <span>2 Bedrooms</span>
+                        </div>
+                        <button class="price-tag">$500,000</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="portal-container">
+        <!-- المحتوى الرئيسي في حالة عدم وجود عقارات -->
+        <main class="portal-main empty-state">
+            <header class="user-welcome">
+                <div class="avatar">AI</div>
+                <div class="welcome-text">
+                    <h1>Hello, Alex</h1>
+                    <p>Today is Tuesday, 27 June 2023</p>
+                </div>
+            </header>
+
+            <div class="empty-content">
+                <img src="images/city-illustration.png" alt="No Properties Yet" class="city-img">
+                <p>You didn't add any properties</p>
+                <a href="index.html" class="browse-btn">Browse Properties</a>
+            </div>
+        </main>
+
+        <!-- التقويم الكامل (Calendar) -->
+        <aside class="calendar-sidebar">
+            <div class="calendar-card full-calendar">
+                <h3>📅 Calender</h3>
+                <p class="calendar-month">July 2023</p>
+
+                <!-- شبكة التقويم -->
+                <div class="calendar-grid">
+                    <span>Mo</span><span>Tu</span><span>We</span><span>Th</span><span>Fr</span><span>Sa</span><span>Su</span>
+                    <!-- مثال للأيام -->
+                    <span class="muted">26</span><span class="muted">27</span><span class="muted">28</span><span class="muted">29</span><span class="muted">30</span><span>1</span><span>2</span>
+                    <span>3</span><span class="active-day">4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span>
+
+                </div>
+
+                <div class="no-events">
+                    <p>No Events Yet!</p>
+                    <p class="small">Let's create your first event</p>
+                    <button class="create-event-btn">Create one</button>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <!-- الجزء الأيمن: التقويم (Sidebar) -->
+    <aside class="calendar-sidebar">
+        <div class="calendar-card">
+            <h3>📅 Calender</h3>
+            <div class="timeline">
+                <div class="event">
+                    <span class="time">7:00</span>
+                    <div class="event-details">
+                        <p>Property: 123 Main Street</p>
+                        <p>Agent: John Doe</p>
+                        <p class="status">Confirmed</p>
+                    </div>
+                </div>
+                <div class="event">
+                    <span class="time">10:40</span>
+                    <div class="event-details">
+                        <p>Property: 456 Elm Avenue</p>
+                        <p>Status: Pending</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+</div>
+
+</body>
+</html>

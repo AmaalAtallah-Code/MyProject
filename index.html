@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zas Enterprise - Real Estate</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- استيراد خط مناسب من Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="main-container">
+    <!-- شريط التنقل (Navbar) -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="Logo"> <!-- استبدلها بشعارك من فيجما -->
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Property</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="customer-portal.html">Customer portal</a>                <li><a href="#">Billing</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- قسم البطولة (Hero Section) -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Search for Your Dream <br> Home</h1>
+            <p>Transform Your House Hunting into an Extraordinary Adventure with Zas Enterprise company</p>
+            <!-- قسم المغامرة العقارية (Adventure Section) -->
+            <section class="adventure-section">
+                <div class="adventure-card">
+                    <div class="adventure-image">
+                        <img src="images/house.png" alt="Modern House">
+                    </div>
+                    <div class="adventure-text">
+                        <h2>Begin Your <span>Real Estate</span> <br> Adventure</h2>
+                        <p>Let's Find Your Dream Home</p>
+                        <button class="signup-btn">Sign Up</button>
+                    </div>
+                </div>
+                <div class="portal-wrapper">
+                    <!-- الهامش الأسود الجانبي -->
+                    <aside class="sidebar-black">
+                        <div class="sidebar-logo">
+                            <img src="images/logo.png" alt="Logo">
+                        </div>
+                        <ul class="sidebar-menu">
+                            <li class="active">🏠</li> <!-- أيقونة للرئيسية -->
+                            <li>📊</li> <!-- أيقونة للإحصائيات -->
+                            <li>⚙️</li> <!-- أيقونة للإعدادات -->
+                        </ul>
+                    </aside>
+
+                    <!-- باقي المحتوى (الذي كتبناه سابقاً) يوضع هنا -->
+                    <div class="portal-container">
+                        <!-- كود الـ main والـ aside القديم هنا -->
+                    </div>
+                </div>
+
+                <!-- عنوان القسم التالي الذي يظهر في أسفل الصورة -->
+                <div class="section-title">
+                    <h3>Best Property</h3>
+                </div>
+            </section>
+
+            <!-- شريط البحث الزجاجي -->
+            <div class="search-bar">
+                <div class="search-item">
+                    <span>Size</span>
+                    <select>
+                        <option>Select the size</option>
+                    </select>
+                </div>
+                <div class="search-item">
+                    <span>Postcode</span>
+                    <input type="text" placeholder="Enter (e.g., 12345)">
+                </div>
+                <div class="search-item">
+                    <span>Town</span>
+                    <input type="text" placeholder="Pakistan">
+                </div>
+                <button class="search-btn">
+                    Search <span>🔍</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- صورة المبنى -->
+        <div class="hero-image">
+            <img src="images/building.png" alt="Real Estate Building"> <!-- صورة 1.jpg -->
+        </div>
+    </section>
+</div>
+<!-- قسم أفضل العقارات (Best Property Section) -->
+<section class="properties-section">
+    <h2 class="main-title">Best Property</h2>
+
+    <div class="properties-grid">
+        <!-- بطاقة العقار الأولى -->
+        <div class="property-card">
+            <div class="prop-img">
+                <img src="images/prop1.jpg" alt="Property 1">
+            </div>
+            <div class="prop-info">
+                <div class="prop-header">
+                    <h4>Elegant City Residence</h4>
+                    <span class="star">★</span>
+                </div>
+                <p class="location">📍 Lahore, Pakistan</p>
+                <p class="price">$670,000</p>
+                <button class="details-btn">More Details</button>
+            </div>
+        </div>
+
+        <!-- بطاقة العقار الثانية -->
+        <div class="property-card">
+            <div class="prop-img">
+                <img src="images/prop2.jpg" alt="Property 2">
+            </div>
+            <div class="prop-info">
+                <div class="prop-header">
+                    <h4>Contemporary Villa</h4>
+                    <span class="star">★</span>
+                </div>
+                <p class="location">📍 Islamabad, Pakistan</p>
+                <p class="price">$300,000</p>
+                <button class="details-btn">More Details</button>
+            </div>
+        </div>
+
+        <!-- بطاقة العقار الثالثة -->
+        <div class="property-card">
+            <div class="prop-img">
+                <img src="images/prop3.jpg" alt="Property 3">
+            </div>
+            <div class="prop-info">
+                <div class="prop-header">
+                    <h4>Modern Apartment</h4>
+                    <span class="star">★</span>
+                </div>
+                <p class="location">📍 Islamabad, Pakistan</p>
+                <p class="price">$500,000</p>
+                <button class="details-btn">More Details</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- نقاط التمرير (Pagination Dots) -->
+    <div class="dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+</section>
+<section class="services-section">
+    <!-- العنوان والوصف العلوي -->
+    <div class="services-header">
+        <h2>Our Services</h2>
+        <p>Welcome to our services section, where we provide powerful and reliable real estate solutions tailored to meet your business needs.</p>
+    </div>
+
+    <div class="services-container">
+        <!-- الصورة الجانبية -->
+        <div class="services-image">
+            <img src="images/services-house.png" alt="Modern Architecture">
+        </div>
+
+        <!-- شبكة الخدمات -->
+        <div class="services-grid">
+            <div class="service-box">
+                <h3>Property Marketing</h3>
+                <p>Promote properties through targeted advertising.</p>
+            </div>
+            <div class="service-box">
+                <h3>Property Management</h3>
+                <p>Handle rent collection, maintenance, and tenant screening.</p>
+            </div>
+            <div class="service-box">
+                <h3>Real Estate Consultation</h3>
+                <p>Offer expert advice on investments and market trends.</p>
+            </div>
+            <div class="service-box">
+                <h3>Property Inspection</h3>
+                <p>Assess property condition and provide detailed reports.</p>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
