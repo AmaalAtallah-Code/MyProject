@@ -713,7 +713,11 @@ nav {
     color: #555;
     font-size: 0.9rem;
 }
-
+.logo img {
+    width: 50px;
+    height: auto;
+    object-fit: contain;
+}
 /* ألوان الحالة (Status) */
 .status-paid { color: #2d4d41; font-weight: bold; }
 .status-pending { color: #fbc77d; font-weight: bold; }
