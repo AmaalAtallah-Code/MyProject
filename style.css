@@ -721,3 +721,8 @@ nav {
 /* ألوان الحالة (Status) */
 .status-paid { color: #2d4d41; font-weight: bold; }
 .status-pending { color: #fbc77d; font-weight: bold; }
+.logo img {
+    width: 50px; /* أو الحجم الذي تراه مناسباً في فيجما */
+    height: auto;
+    object-fit: contain;
+}
